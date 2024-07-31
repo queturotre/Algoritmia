@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        Scanner migue = new Scanner(System.in);
+        int a, b; // Números a leer.
+        
+        do {
+            a = migue.nextInt();
+            b = migue.nextInt();
+            if (a > b){
+                System.out.println("Decrescente");
+            } else if (a < b){
+                System.out.println("Crescente");
+            } else {
+                System.out.println("Equal numbers");
+            }
+        } while (a != b);
+    }
+}
